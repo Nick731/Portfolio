@@ -1,0 +1,1 @@
+This purpose of this project is to allow users to create quizzes for other people to take. Users have the ability to create a quiz and add questions to it. Once a user has completed a quiz, they can then have others take the quiz. Once a user is finished taking a quiz, their score is then stored in the database. Users can then check their previous scores from their profile. 

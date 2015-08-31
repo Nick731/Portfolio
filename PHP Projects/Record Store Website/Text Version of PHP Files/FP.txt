@@ -1,0 +1,196 @@
+body {
+	background-image: url("http://www.pitt.edu/~npp9/1052/finaleproject/wallpaper2.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#main_wrapper {
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left; 
+	background-color:lightgray;
+	background-size: 950px ;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #E60000;
+	color: black;
+	font-family: Futura, arial;
+	
+}
+#main {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+#header {
+	
+}
+#nav {
+	text-align: center;
+	color: black;
+	font-family: Futura, arial;
+	font-size: 150%;
+}
+#nav_inner {
+	margin-right: 0px;
+	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#content {
+	float:left;
+	width:56%; 
+	top:0px;	
+	color: #E60000;
+	font-family: Futura, arial;
+}
+#content2 {
+	text-align: center;
+	float:right;
+	margin-right: 5px;
+	margin-left: 10px;
+	position:relative; top:20px;
+	color: #E60000;
+	font-family: Futura, arial;
+}
+#content3 {	
+	float:right;
+	margin-right: 5px;			
+	margin-left: 10px;
+	position:relative; top:5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#content_inner {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#myDiv {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#buttons {
+	text-align: center;
+	font-size: 138%;
+
+}	
+#footer {
+	clear:both;
+	text-align: center; 
+	color: white;
+	line-height: 40px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-image: url("http://www.pitt.edu/~npp9/1052/homework2/image3crop.jpg");
+	height: 115px; 
+	}
+#promo {
+	width:26%;
+	float:left;
+	font-family: Futura, arial;
+	color: black;
+}
+#promo_inner {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#footer {
+	clear:both;
+	color: black;
+	font-size: 130%;
+	text-align: center;
+	font-family: Futura, arial;
+	background-image: url("http://www.pitt.edu/~npp9/1052/homework7/7footer.jpg");
+	padding-top:25px;
+	padding-bottom:25px;
+}
+#logo {
+	position:absolute; top:25px; left:200px;
+}
+.navlink{
+	size: 500%;
+}
+table {
+	border-collapse: collapse;
+	height: 50px;
+	vertical-align: bottom;
+	
+	
+}
+td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+th {
+	background-color: black;
+	color:lightgray;
+	font-size:250%;
+	font-family: Futura, arial;
+}
+h1 {
+	font-family: Futura, arial;
+	color:black;
+	font-weight: bold;
+	margin:0; 
+	line-height: 50px;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	font-family: Futura, arial;
+	color: black;
+	font-weight: bold;
+	margin:0; 
+	line-height: 50px;
+}
+h3 { 
+	font-family: Futura, arial;
+	font-weight: bold;
+	margin:0px;
+	color: black;
+	line-height: 45px;
+	font-size: 25px;
+	line-height:70px;
+	
+}
+h4 {
+	text-align: left;
+	font-family: Futura, arial;
+	font-weight: bold;
+	margin:0;
+	color: black;
+	line-height: 35px;
+	
+}
+ul {
+	list-style-image: url('clover2.png');
+	width:50px;height:50px;
+}
+p {
+	margin:0;
+	font-weight: bold;
+	line-height: 30px;
+}
+a:visited {
+	color: #E60000;
+	text-decoration: none;
+}
+a:link {
+	color: #E60000;
+	color: content;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	text-decoration: none;
+}

@@ -1,0 +1,70 @@
+<!--This file lets the user reseve an album. The album is tied to their account and the stock count is updated.-->
+
+<?php
+
+session_start();	//The session is started.
+
+include 'FPheader.php';	//The header is included.
+include 'FPconnect.php';	//The connect file is inlcuded.
+
+if(!$_SESSION['signed_in']){				//If the user is not signed in.
+        echo 'You must be signed in to reserve an album.';
+}
+else {
+	//Query used to get the album already tied to the users account so it can be updated later
+	$query = 'SELECT * from customers WHERE user_id="' . $_SESSION['user_id'] . '"';
+	
+	$result = mysql_query($query);		//The query is run on the database.
+ 
+	if(!$result) {		//If there was a problem with the query.
+    	echo 'Error viewing customers album.'  . mysql_error();	//mysql error is printed.
+	}
+	
+	while($row = mysql_fetch_assoc($result)) {     //The query results are printed.  
+			$oldAlbum = $row['albums_album_id'];   //The old album ID already tied to the account is saved for later
+	}
+
+	//Query used to update the album tied to the users account.
+	$query = 'UPDATE customers SET albums_album_id=' . $_POST['album_id'] . ' WHERE user_id="' . $_SESSION['user_id'] . '"'; 
+
+	$result = mysql_query($query);		//The query is run on the database.
+ 
+	if(!$result) {		//If there was a problem with the query.
+    	echo 'The album could not be reserved.'  . mysql_error();	//mysql error is printed.
+	}
+	else {
+		$query = 'SELECT * from albums where album_id=' . $_POST['album_id']; //Query used to display album name
+		
+		$result = mysql_query($query);		//The query is run on the database.
+		
+		if(!$result) {		//If there was a problem with the query.
+    		echo 'ERROR '  . mysql_error();	//mysql error is printed.
+		}
+		
+		while($row = mysql_fetch_assoc($result)) {     //The query results are printed.  
+			echo 'You have resevered a copy of ' . str_replace('_', ' ', $row['album_name']); //The user has reserved a copy of the album.
+		}
+		
+		//Query used to update the album stock.
+		$query = 'UPDATE albums SET album_stock = album_stock - 1 WHERE album_id=' . $_POST['album_id'];
+		
+		$result = mysql_query($query);		//The query is run on the database.
+		
+		if(!$result) {		//If there was a problem with the query.
+    		echo 'ERROR '  . mysql_error();	//mysql error is printed.
+		}
+		
+		//The user can only reserve one album at a time. This query puts the old album they have reserved back in stock.
+		$query = 'UPDATE albums SET album_stock = album_stock + 1 WHERE album_id=' . $oldAlbum;
+		
+		$result = mysql_query($query);		//The query is run on the database.
+		
+		if(!$result) {		//If there was a problem with the query.
+    		echo 'ERROR, the stock could not be added.'  . mysql_error();	//mysql error is printed.
+		}
+		 
+	}
+
+}
+
+?>

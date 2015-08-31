@@ -1,0 +1,33 @@
+Nicholas Peters
+INFSCI 1059 - Final Project
+December 1st, 2014
+
+**This project is able to be view as a web archive. These files are located in the Project Image Archives folder.** 
+
+The purpose of this project was to create a front end and backend for a record store. Listed below are the three main services that the website serves. 
+
+Login Accounts
+admin: 		login: npp9 		password: password
+editor:		login: editor		password: editor	
+user: Can be created on website
+
+
+For my final project, I created a website and store front for a record shop called Nick’s Vinyls. Records have recently been given a new life with many young adults becoming interested in them. Many people have been collecting records for years, trying to build a perfect collection. Sometimes there is just a couple of records that a collection is missing to be complete, this is where my website will come in handy. With my website, there will be many functions to attract users to the physical store.
+
+
+The first service of my project was provide the ability to check the stock we have in store and put it on reserve so that no one else can buy it in our store. Each user account can have only one album tied to it at a time. I have provided three different ways for the user to find the album they are looking for. The first way to browse is by starting at the top level, the genres. Once a genre is chosen, the user is then given a list of artists that fall into that genre. From there they can choose a artist and the list of albums from that artist are displayed. The second way to browse is to skip the genres and view a list of all artists. Once the user has chosen an artist, all of the albums from that artist are displayed. The third and final way to browse our selection of in stock albums is to just view a list of all albums. Once the user has found the album they like, they can click on it to view the details of the album including its artist, its release date, and the number of available until we have. If a user is interested in purchasing the album, they can put it on hold so that they can pick it up for purchase in our physical store. Users must be logged in to put an album on hold. 
+
+
+The second service of my project was to provide a way for users to review albums. This can be done by clicking the reviews link at the top of the page. Once the user is on the reviews page, they are given all of the reviews written, sorted by the name of the album they are for. If the user wants to view the reviews for just a certain album, they can go over to the album page and view them from their. Users can write reviews in two places, one from the reviews page and the other being the album page. Users must be logged in to write a review.
+
+
+The third service of my project was to create a section of the website dedicated to news about artists, tours, and upcoming music. Users can view all of the news articles by clicking the news link at the top of the page. On this page, users are presented the titles of the news articles, the author, and the date they were published. If a user clicks on the title of the article, the are taking to the article page which has the everything from the last page and also the content of the article. If the user is logged in, they can comment on the article. All comments are displayed at the bottom of the article page.
+
+
+The lowest level of account permissions is the standard user account. These accounts can be created by clicking the create an account link when they are logged out. When a user is logged in, an account link is displayed in the head that lets the user view their profile. From their profile, they can view three things. The first is the album that they have on reserve. The second is all of the comments that they have made. They are given the option to delete the comments they have made if they want to. The last thing is a list of all of the album reviews that they have made. Like the comments, users have the option to delete their reviews if they want to. 
+
+
+The medium level of account permissions is the editor account. These accounts can only be created by entering them manually into the database and cannot be created on the website. This account has all of the same privileges as the user account, but they also have the ability to write news articles. A link to create news articles is displayed on the news page and is only visible to the editor account.
+
+
+The highest level of account permissions is the administrator account. These accounts can only be created if you have permission to view the database and cannot be created through the website. When the user is logged in as an administrator, they have a few special privileges. The first admin privilege is the admin profile page which is accessible by clicking the admin link in the header. In addition to the user profile page, admins are given extra statistics about the site such as how many people are registered for the site. Another permission is to delete any comment or review on the website. A delete button is displayed next to each entry and is only visible to the administrator account. 

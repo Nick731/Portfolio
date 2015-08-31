@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script language="javascript">
+        
+        function doSomething(){
+            
+            var photo = {
+                "cameraID": 123,
+                "deviceID": 456,
+                "hardwareVersionNumber": " vx43543lk13424",
+                "canAcessLocalStorage": true,
+                "exposureTime": 250,
+                "aperature": 16,
+                "flashMode": false,
+                "filtersApplied": {
+                "PhotoFilter": [
+                    {
+                        "filterID": 1,
+                        "filterName": "sepia"
+                    },
+                    {
+                        "filterID": 2,
+                        "filterName": "black-and-white"
+                    },
+                    {
+                        "filterID": 3,
+                        "filterName": "extra contrast"
+                    }
+                ]
+                }
+            }
+            
+            console.log(JSON.stringify(photo));
+            
+            /*var textbox = document.getElementById("txtName");
+            textbox.value="mary";
+            textbox.style.background="#ff0000";
+            console.log(textbox);*/
+        
+            /*var textboxList = document.getElementsByTagName("input");
+            
+            console.log(textboxList);
+            
+            var myFirstObject = function(){
+                this.firstName = "Nick",
+                this.lastName = "Peters",
+                this.ssn = 1234543,
+                this.testMethod = function(){
+                    alert("I just called a method");
+                }
+            };
+            
+            var obj = new myFirstObject();
+            obj.testMethod();
+            console.log(obj.ssn);*/
+        }
+        
+        
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="button" value="Do something" id="btnSomething" onclick="doSomething();" />
+        </div>
+    </body>
+</html>

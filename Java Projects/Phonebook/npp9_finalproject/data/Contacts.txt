@@ -1,0 +1,8 @@
+Sidney,Crosby,Mobile/412-967-8345
+Bill,Gates,Work/865-257-9876
+Paul,Hewson,Work/865-257-9876,Home/123-876-3567
+Chris,Martin,Work/987-654-4321,Home/317-345-6724
+Barack,Obama,Work/714-845-1945,Office/765-237-5753
+Larry,Page,Home/567-235-7643
+Nick,Peters,Home/412-346-7653,Work 1/412-345-6789,Work 2/285-257-9876
+Mark,Zuckerberg,Work/234-543-2345
